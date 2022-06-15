@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Tag("smoke test")
+//@Tag("smoke test")
 public class Junit5DemoTest {
     private String[] words={"cali","mali","dani","valli"};
 
@@ -32,6 +32,8 @@ public class Junit5DemoTest {
 //        }
 //    }
 
+
+    @Disabled
     @RepeatedTest(value = 5)
     @DisplayName("Repeating test")
     void customDisplayName(RepetitionInfo repInfo, TestInfo info){
